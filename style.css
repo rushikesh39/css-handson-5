@@ -1,0 +1,293 @@
+.parent{
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+}
+.list1{
+    display: flex;
+}
+.list1Item{
+    margin: 20px;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(97, 193, 224);
+  animation-name: example;
+  animation-duration:3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+@keyframes example {
+    from {transform: skew(10deg , 10deg);}
+  to {transform: skew(-10deg, -10deg);}
+}
+.list2{
+    display: flex;
+}
+.list2Item{
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(139, 85, 183, 0.874);
+  animation-name: example2;
+  animation-duration:2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+@keyframes example2 {
+    from {transform: skew(-10deg , -10deg);}
+  to {transform: skew(10deg, 10deg);}
+}
+.list3{
+    display: flex;
+}
+.list3Item{
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(97, 193, 224);
+  animation-name: example3;
+  animation-duration:3s;
+  animation-iteration-count: infinite;
+  
+}
+@keyframes example3 {
+    from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+
+.list4{
+    display: flex;
+}
+.list4Item1{
+    
+    width: 100px;
+    height: 100px;
+    background-color: rgb(11, 125, 238);
+    margin: 20px;
+    border: 2px solid blue;
+    animation-name:list4Item1;
+    animation-duration:3s;
+    animation-iteration-count: infinite;
+}
+@keyframes list4Item1 {
+    from {transform: scale(1, 1);}
+  to {transform: scale(1, 0.5);}
+}
+.list4Item2{
+
+    width: 100px;
+    height: 100px;
+    background-color: rgb(220, 59, 22);
+    border: 2px solid brown;
+    margin: 20px;
+    animation-name:list4Item2;
+    animation-duration:3s;
+    animation-iteration-count: infinite;
+}
+@keyframes list4Item2 {
+    from {transform: scale(1, 1);}
+  to {transform: scale(0.3, 1);}
+}
+.list4Item3{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(56, 230, 88);
+    margin: 20px;
+    border: 2px solid green;
+    animation-name:list4Item3;
+    animation-duration:3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes list4Item3 {
+    from {transform: rotate(0deg);}
+  to {transform: rotate(180deg);}
+}
+a{
+    font-size: 20px;
+}
+/* -------------------------------------------------------- */
+.container{
+  background-color: rgb(242, 242, 80);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item{
+  width: 100px;
+  height: 100px;
+  background-color: lawngreen;
+  margin: 20px;
+}
+.item1{
+  transition-duration: 3s;
+    /* transition-timing-function:; */
+}
+.item1:hover{
+  width: 400px;
+}
+.item2{
+  transition-duration: 3s;
+    transition-timing-function: ease;
+}
+.item2:hover{
+  width: 250px;
+  height: 300px;
+}
+.item3{
+  transition-duration: 3s;
+    transition-timing-function: linear;
+}
+.item3:hover{
+  width: 400px;
+}
+.item4{
+  transition-duration: 3s;
+    transition-timing-function: ease;
+}
+.item4:hover{
+  width: 400px;
+}
+.item5{
+  transition-duration: 3s;
+    transition-timing-function:ease-in;
+}
+.item5:hover{
+  width: 400px;
+}
+.item6{
+  transition-duration: 3s;
+    transition-timing-function: ease-out;
+}
+.item6:hover{
+  width: 400px;
+}
+.item7{
+  transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+}
+.item7:hover{
+  width: 400px;
+}
+/* ------------------------------------------------------- */
+.animation{
+  height: 100vh;
+  width: 100%;
+  background: url(./sky.jpg);
+  background-size: cover;
+  background-position: center;
+  position:relative;
+  border: 5px groove ;
+  border-left:10px groove rgba(243, 96, 16, 0.995);
+  border-top:10px groove whitesmoke;
+  border-right:10px groove green;
+}
+.animation h1{
+  text-align: center;
+}
+h1 .span1{
+  background-color:rgba(243, 96, 16, 0.995);
+}
+h1 .span2{
+  background-color: white;
+}
+h1 .span3{
+  background-color: green;
+}
+.sun img{
+  width: 50px;
+}
+.sun{
+  animation: sun 30s linear infinite;
+  width: 100%;
+}
+@keyframes sun {
+  0%{transform: translateX(1400px);}
+  100%{transform: translateX(-34px);}
+}
+.flag img{
+  width: 100px;
+}
+.flag{
+  position: absolute;
+  left: 750px;
+}
+.highway{
+  height: 200px;
+  width: 500%;
+  display: block;
+  background-image:url(./road.jpg) ;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right:0;
+  z-index: 1;
+  background-repeat:repeat-x ;
+  animation: highway 5s linear infinite;
+}
+@keyframes highway {
+  100%{transform: translateX(-3400px);}
+}
+.city{
+  height: 250px;
+  width:500%;
+  background-image: url(./city.png);
+  position: absolute;
+  bottom: 200px;
+  left: 0;
+  right: 0;
+  display: block;
+  z-index:1;
+  background-repeat: repeat-x;
+  animation: city 20s linear infinite;
+
+}
+@keyframes city {
+  100%{transform: translateX(-1400px);}
+}
+.car{
+  width: 500px;
+  left: 40%;
+  bottom: 100px;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 2;
+}
+.car img{
+  width: 100%;
+  animation: car 1s linear infinite;
+}
+@keyframes car
+ {
+  100%{transform: translateY(-2px);}
+  50%{transform: translateY(1);}
+  0%{transform: translateY(-2Px);}
+}
+.wheel{
+  left: 50%;
+  bottom:178px ;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 2;
+
+}
+.wheel img{
+  width:72px;
+  height: 72px;
+  animation: wheel 0.0005s linear infinite;
+}
+.backwheel{
+  left: -347px;
+  position: absolute;
+}
+.frontwheel{
+  left: -40px;
+  position: absolute;
+}
+@keyframes wheel {
+  100%{transform: rotate(360deg);}
+}
