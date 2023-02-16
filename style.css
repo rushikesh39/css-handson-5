@@ -216,8 +216,8 @@ h1 .span3{
 }
 .flag{
   position: absolute;
-  left: 750px;
-  top:400px;
+  left: 800px;
+  top: 370px;
 }
 .highway{
   height: 200px;
@@ -253,9 +253,9 @@ h1 .span3{
   100%{transform: translateX(-1400px);}
 }
 .car{
-  width: 500px;
-  left: 40%;
-  bottom: 100px;
+  width: 20rem;
+  left: 50%;
+  bottom: 9rem;;
   transform: translateX(-50%);
   position: absolute;
   z-index: 2;
@@ -271,24 +271,27 @@ h1 .span3{
   0%{transform: translateY(-2Px);}
 }
 .wheel{
+ 
   left: 50%;
-  bottom:178px ;
+  bottom:13rem;
   transform: translateX(-50%);
   position: absolute;
   z-index: 2;
 
 }
 .wheel img{
-  width:72px;
-  height: 72px;
+
+  width:55px;
+  height: 55px;
   animation: wheel 0.0005s linear infinite;
 }
 .backwheel{
-  left: -347px;
+  left: -8.2rem;
   position: absolute;
+
 }
 .frontwheel{
-  left: -40px;
+  left: 4.1rem;
   position: absolute;
 }
 @keyframes wheel {
